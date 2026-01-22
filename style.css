@@ -1,0 +1,368 @@
+ body {
+     margin: 0;
+     font-family: Arial, sans-serif;
+     background: #f4f4f4;
+     display: flex;
+     flex-direction: column;
+
+
+ }
+
+ header {
+     background: #222;
+     color: white;
+     padding: 15px 20px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+
+ header h2 {
+     margin: 0;
+     color: ;
+     font-size: 24px;
+     font-weight: bold;
+
+ }
+
+
+ nav a {
+     color: white;
+     margin: 10px;
+     text-decoration: none;
+     font-weight: bold;
+ }
+
+
+
+ /*-----All----*/
+ .contact {
+     padding: 50px 20px;
+     text-align: center;
+ }
+
+ .contact h1 {
+     margin-bottom: 30px;
+     color: black;
+ }
+
+ .slider-wrapper {
+     display: flex;
+     gap: 20px;
+     justify-content: center;
+     flex-wrap: wrap;
+ }
+
+ .slider-box {
+     width: 3000px;
+     height: 100px;
+     overflow: hidden;
+     border-radius: 10px;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+ }
+
+ .slider {
+     display: flex;
+     gap: 150px;
+     padding: 20px;
+ }
+
+ .slider img {
+     width: 60px;
+     height: 60px;
+ }
+
+ .slider {
+     animation: slide 5s linear infinite;
+ }
+
+ @keyframes slide {
+     from {
+         transform: translateX(0);
+     }
+
+     to {
+         transform: translateX(-500px);
+     }
+ }
+
+
+ /* Section Styles */
+ section {
+     display: none;
+     background: white;
+     margin: 20px;
+     padding: 20px;
+     border-radius: 5px;
+ }
+
+ button {
+     padding: 8px 15px;
+     background: #222;
+     color: white;
+     border: none;
+     cursor: pointer;
+ }
+
+ input,
+ textarea {
+     padding: 7px;
+     width: 90%;
+     margin: 10px 0;
+     border: 1px solid #ccc;
+     border-radius: 4px;
+
+ }
+
+ /* LOGIN FORM */
+ body {
+     font-family: Arial, sans-serif;
+     background: #f2f2f2;
+
+ }
+
+ .container {
+     width: 350px;
+     margin: 100px auto;
+     background: white;
+     padding: 25px;
+     border-radius: 8px;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+ }
+
+ h2 {
+     text-align: center;
+ }
+
+ input {
+     width: 100;
+     padding: 10px;
+     margin: 10px 0;
+ }
+
+ button {
+     width: 100%;
+     padding: 10px;
+     background: #007bff;
+     color: white;
+     border: none;
+     cursor: pointer;
+ }
+
+ button:hover {
+     background: #0056b3;
+ }
+
+ p {
+     text-align: center;
+     font-weight: bold;
+ }
+
+
+ /* PRODUCTS */
+ .products {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+     gap: 20px;
+     padding: 20px;
+ }
+
+ .product {
+     background-color: white;
+     padding: 15px;
+     border-radius: 5px;
+     text-align: center;
+ }
+
+ .product img {
+     width: 100%;
+     height: 200px;
+     object-fit: contain;
+ }
+
+ .product h3 {
+     margin: 10px 0;
+     font-size: 16px;
+ }
+
+ .product p {
+     color: #b12704;
+     font-weight: bold;
+ }
+
+ .product button {
+     background-color: #ffd814;
+     border: 1px solid #fcd200;
+     padding: 8px 12px;
+     cursor: pointer;
+     margin-top: 10px;
+ }
+
+
+ /* FOOTER */
+ footer {
+     margin-top: auto;
+     background: #222;
+     padding: 20px;
+     color: white;
+
+ }
+
+ footer a {
+     color: black;
+     font-size: 28px;
+     margin: 0 15px;
+     text-decoration: none;
+     transition: 0.3s;
+ }
+
+ footer p {
+     color: black;
+ }
+
+
+
+
+ /* FOOTER */
+ footer {
+     background: white;
+     color: black;
+ }
+
+
+
+ .footer-container {
+     display: flex;
+     justify-content: space-around;
+     padding: 30px;
+     flex-wrap: wrap;
+ }
+
+ .footer-box a {
+     display: block;
+     color: black;
+     text-decoration: none;
+     margin: 5px 0;
+     font-size: 24px;
+     margin-right: 10px;
+ }
+
+ /* SOCIAL MEDIA ICONS */
+
+ .social-icons a {
+     color: black;
+     font-size: 24px;
+     margin-right: 10px;
+
+ }
+
+ /* FOOTER */
+ .footer-box {
+     flex: 1;
+     min-width: 200px;
+     margin: 10px;
+ }
+
+ footer h3 {
+     margin-top: 0;
+     margin-bottom: 10px;
+     font-size: 18px;
+     color: rgb(226, 13, 13);
+ }
+
+
+
+ .footer-box p,
+ .footer-box a {
+     color: black;
+     text-decoration: none;
+
+ }
+
+ .footer-box a:hover {
+     color: #a16915;
+ }
+
+
+ .footer-bottom {
+     text-align: center;
+     margin-top: 30px;
+     padding-top: 10px;
+     border-top: 1px solid #444;
+     font-size: 14px;
+ }
+
+ /*----logo---*/
+
+
+ .copyright {
+     text-align: center;
+     padding: 10px;
+     background: black;
+     font-size: 14px;
+     color: white;
+ }
+
+ /* ABOUT PAGE */
+ body {
+     font-family: Arial, sans-serif;
+     background: #f4f4f4;
+     margin: 0;
+     padding: 0;
+ }
+
+ .about-container {
+     max-width: 1000px;
+     margin: 40px auto;
+     background: rgb(71, 29, 29);
+     padding: 40px;
+     border-radius: 10px;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ }
+
+ h1 {
+     text-align: center;
+     margin-bottom: 20px;
+     color: white;
+ }
+
+ .about-container h2 {
+     color: #007BFF;
+     margin-top: 30px;
+     text-align: left;
+ }
+
+ p {
+     color: white;
+     line-height: 1.7;
+     font-size: 16px;
+ }
+
+ ul {
+     margin-top: 10px;
+     padding-left: 20px;
+ }
+
+ ul li {
+     margin-bottom: 8px;
+     color: white;
+ }
+
+ .cta {
+     text-align: center;
+     margin-top: 40px;
+ }
+
+ .cta a {
+     text-decoration: none;
+     background: #007BFF;
+     color: white;
+     padding: 12px 25px;
+     border-radius: 5px;
+     font-size: 16px;
+ }
+
+ .cta a:hover {
+     background: #0056b3;
+ }
