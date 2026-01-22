@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* BLOG */
+        .blog {
+            padding: 40px;
+            background: #f5f5f5;
+            text-align: center;
+        }
+
+        .blog-box {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .blog-card {
+            background: white;
+            padding: 20px;
+            width: 250px;
+            border-radius: 5px;
+        }
+
+        /* FAQ */
+        .faq {
+            padding: 40px;
+        }
+
+        .faq-item h4 {
+            cursor: pointer;
+            background: #eee;
+            padding: 10px;
+        }
+
+        .faq-item p {
+            display: none;
+            padding: 10px;
+        }
+
+        /* NEWSLETTER */
+        .newsletter {
+            padding: 40px;
+            text-align: center;
+            background: #222;
+            color: white;
+        }
+
+        .newsletter input {
+            padding: 10px;
+            width: 250px;
+        }
+
+        .newsletter button {
+            padding: 10px 20px;
+            background: orange;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="blog">
+        <h2>Latest Blogs</h2>
+        <div class="blog-box">
+            <div class="blog-card">
+                <h3>Web Development</h3>
+                <p>Learn HTML,
+                    CSS & JavaScript step by step.</p>
+            </div>
+            <div class="blog-card">
+                <h3>Python Programming</h3>
+                <p>Complete Python guide for beginners.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item">
+            <h4 onclick="toggleFAQ(this)">What services do you provide?</h4>
+            <p>We provide Web Development,
+                App Development and Training.</p>
+        </div>
+        <div class="faq-item">
+            <h4 onclick="toggleFAQ(this)">Is this website free?</h4>
+            <p>Yes,
+                learning content is free.</p>
+        </div>
+    </section>
+
+
+    <section class="newsletter">
+        <h2>Subscribe to Newsletter</h2><input type="email" placeholder="Enter your email"><button>Subscribe</button>
+    </section>
+
+    <script>
+        function toggleFAQ(element) {
+            let answer = element.nextElementSibling;
+            answer.style.display =
+                answer.style.display === "block" ? "none" : "block";
+        }
+    </script>
+</body>
+
+</html>
