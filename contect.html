@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+        }
+
+        .contact-container {
+            max-width: 450px;
+            margin: 60px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .contact-container h1 {
+            margin-bottom: 10px;
+        }
+
+        .contact-container p {
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+
+        textarea {
+            height: 100px;
+            resize: none;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background: #007bff;
+            border: none;
+            color: white;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #0056b3;
+        }
+
+        #successMsg {
+            color: green;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        /* Mobile Responsive */
+        @media(max-width: 500px) {
+            .contact-container {
+                margin: 20px;
+            }
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <div class="contact-container">
+        <h1>Contact Us</h1>
+        <p>अगर आपके कोई सवाल हैं तो नीचे फॉर्म भरें</p>
+
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Your Name">
+            <input type="email" id="email" placeholder="Your Email">
+            <input type="text" id="subject" placeholder="Subject">
+
+
+            <textarea id="message" placeholder="Your Message"></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+
+        <p id="successMsg"></p>
+    </div>
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            let name = document.getElementById("name").value;
+            let email = document.getElementById("email").value;
+            let subject = document.getElementById("subject").value;
+            let message = document.getElementById("message").value;
+            let successMsg = document.getElementById("successMsg");
+
+            if (name === "" || email === "" || subject === "" || message === "") {
+                alert("Please fill all fields");
+            } else {
+                successMsg.innerText = "Your message has been sent successfully!";
+                document.getElementById("contactForm").reset();
+            }
+        });
+    </script>
+
+    <script src="contact.js"></script>
+</body>
+
+</html>
+[9:57 pm, 10/01/2026] A.K Maurya:
+[9:57 pm, 10/01/2026] A.K Maurya:
