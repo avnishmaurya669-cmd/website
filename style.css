@@ -199,16 +199,38 @@
      margin-top: 10px;
  }
 
-
- /* FOOTER */
- footer {
-     margin-top: auto;
-     background: #222;
-     padding: 20px;
-     color: white;
-
+ .product button:hover {
+     background-color: #f7ca00;
  }
 
+ /* Message Icon Style */
+ body {
+     font-family: Arial, sans-serif;
+     height: 2000px;
+     /* scroll dekhne ke liye */
+ }
+
+ /* Message Icon Style */
+ .message-icon {
+     position: fixed;
+     bottom: 20px;
+     right: 20px;
+     background-color: #25D366;
+     color: white;
+     font-size: 30px;
+     padding: 15px 17px;
+     border-radius: 50%;
+     text-decoration: none;
+     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+     z-index: 9999;
+ }
+
+ .message-icon:hover {
+     background-color: #128C7E;
+     transform: scale(1.1);
+ }
+
+ /* FOOTER LINKS */
  footer a {
      color: black;
      font-size: 28px;
@@ -303,6 +325,70 @@
      font-size: 14px;
      color: white;
  }
+
+ /*--map and contact--*/
+ .map-contact {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 20px;
+     padding: 20px;
+     justify-content: center;
+ }
+
+ .map-container,
+ .contact-info {
+     flex: 1;
+     min-width: 300px;
+ }
+
+ .map-container iframe {
+     width: 100%;
+     height: 300px;
+     border: none;
+     border-radius: 5px;
+ }
+
+ .contact-info h2 {
+     margin-bottom: 15px;
+ }
+
+ .contact-info p {
+     margin: 8px 0;
+ }
+
+ .info-box {
+     display: flex;
+     align-items: center;
+     margin-bottom: 15px;
+ }
+
+ .info-box i {
+     font-size: 24px;
+     margin-right: 10px;
+     color: #007bff;
+ }
+
+
+
+
+
+ /* --content info-- */
+ .content-info {
+     padding: 20px;
+     background: white;
+     margin: 20px;
+     border-radius: 5px;
+ }
+
+ .content-info h2 {
+     margin-bottom: 15px;
+ }
+
+ .content-info p {
+     line-height: 1.6;
+ }
+
+
 
  /* ABOUT PAGE */
  body {
