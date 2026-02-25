@@ -1,9 +1,16 @@
 <!DOCTYPE html>
 <html>
+<html lang="en">
 
 <head>
     <title>Login</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         body {
 
             font-family: Arial;
@@ -30,7 +37,7 @@
         }
 
         input {
-            width: 90%;
+            width: 100%;
             padding: 20px;
             margin: 10px 0;
             border-radius: 5px;
@@ -39,9 +46,17 @@
         button {
             width: 100%;
             padding: 10px;
+            margin-top: 10px;
             background: blue;
             color: white;
             border: none;
+        }
+
+        /* Extra small screen fix */
+        @media(max-width:350px) {
+            form {
+                padding: 15px;
+            }
         }
     </style>
 </head>
@@ -50,16 +65,15 @@
 
     <form onsubmit="loginUser(event)">
         <h2>Login</h2>
-
+        <label for="email">Email:</label>
         <input type="email" id="loginEmail" placeholder="Email" required>
 
         <div style="position: relative;">
+            <label for="password">Password:</label>
             <input type="password" id="loginPassword" placeholder="Password" required>
-            <span onclick="togglePassword()" style="position:absolute; right:10px; top:12px; cursor:pointer;">
-                👁️..
-            </span>
-        </div>
 
+        </div>
+        <button type="button" onclick="togglePassword()">Show / Hide Password</button>
         <button type="submit">Login</button>
     </form>
 
@@ -90,5 +104,3 @@
 </body>
 
 </html>
-
-
