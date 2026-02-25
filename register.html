@@ -6,13 +6,18 @@
     <style>
         body {
             font-family: Arial;
-            background: #f2f2f2;
+            background: #5e93be;
+        }
+
+        h2 {
+            text-align: center;
+            color: #bb0e0e;
         }
 
         form {
             width: 350px;
             margin: 100px auto;
-            background: #fff;
+            background: #c5944b;
             padding: 20px;
             box-shadow: 0 0 10px gray;
         }
@@ -37,9 +42,42 @@
 
     <form onsubmit="registerUser(event)">
         <h2>Register</h2>
+        <label for="fname">First Name:</label><br>
+        <input type="text" id="fname" name="fname" placeholder="Enter the valid name" required><br><br>
+
+        <label for="lname">Last Name:</label><br>
+        <input type="text" id="lname" name="lname" placeholder="Enter the valid last name" required><br><br>
+        <label for="mobile">Mobile Number:</label><br>
+        <input type="tel" id="mobile" name="mobile" maxlength="10" placeholder="Enter the valid phone number"
+            pattern="[0-9]{10}" required><br><br>
+
+        <label>Gender:</label><br>
+        <input type="radio" id="male" name="gender" required>
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="gender" required>
+        <label for="female">Female</label><br><br>
+
+        <label for="subject">Subject:</label><br>
+        <select id="subject" name="subject" requred><br><br>
+            <option value=" ">--Select subject--</option>
+            <option value="Mathe">Mathe</option>
+            <option value="English">English</option>
+            <option value="computer">Computer</option>
+            <option value="computer">Computer science</option>
+            <option value="computer">Poly...</option>
+            <option value="computer">B.Teach</option>
+            <option value="computer">BCA AI</option>
+            <option value="computer">BCA</option>
+            <option value="computer">MCA</option>
+        </select><br><br>
+        <!--Date (calendar) -->
+        <label>Select Data:</label><br>
+        <input type="date" name="date" required><br><br>
+
 
         <input type="email" id="email" placeholder="Email" required>
-        <input type="password" id="password" placeholder="Password" required>
+        <input type="password" id="password" placeholder="Password" maxlength="8" pattern="[0-9,A-Z]{8}" required>
         <button type="submit">Register</button>
         <p>Already registered? <a href="login.html">Login</a></p>
     </form>
@@ -64,6 +102,5 @@
     </script>
 
 </body>
-
 
 </html>
