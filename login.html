@@ -5,22 +5,35 @@
     <title>Login</title>
     <style>
         body {
+
             font-family: Arial;
-            background: #f2f2f2;
+            background: rgb(7, 60, 158);
+
         }
 
         form {
-            width: 350px;
+            max-width: 450px;
             margin: 100px auto;
-            background: #fff;
+            background: #af8615;
             padding: 20px;
             box-shadow: 0 0 10px gray;
+            border-radius: 10px;
+
+        }
+
+        h2 {
+            text-align: center;
+            color: black;
+            text-align: center;
+            margin-bottom: 20px;
+
         }
 
         input {
             width: 90%;
-            padding: 10px;
+            padding: 20px;
             margin: 10px 0;
+            border-radius: 5px;
         }
 
         button {
@@ -43,7 +56,7 @@
         <div style="position: relative;">
             <input type="password" id="loginPassword" placeholder="Password" required>
             <span onclick="togglePassword()" style="position:absolute; right:10px; top:12px; cursor:pointer;">
-                👁️
+                👁️..
             </span>
         </div>
 
@@ -67,7 +80,7 @@
 
             if (email === savedEmail && password === savedPassword) {
                 alert("Login Successful!");
-                window.location.href = "index.html";   // ✅ Dashboard ki jagah index.html
+                window.location.href = "index.html";
             } else {
                 alert("Invalid Email or Password");
             }
@@ -76,5 +89,6 @@
 
 </body>
 
-
 </html>
+
+
