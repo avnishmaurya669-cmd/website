@@ -4,8 +4,8 @@
  }
 
  .chat-container {
+    width:100%;
      max-width: 350px;
-     width:100%;
      margin: 50px auto;
      background: white;
      border-radius: 10px;
@@ -53,6 +53,16 @@
      padding: 10px;
      border: none;
  }
+
+
+ .chat-input button {
+     padding: 10px;
+     background: #4CAF50;
+     color: white;
+     border: none;
+     cursor: pointer;
+
+ }
 .chat-input button:hover {
      background: #45a049;
  }
@@ -64,12 +74,4 @@
      }
  }
 
- .chat-input button {
-     padding: 10px;
-     background: #4CAF50;
-     color: white;
-     border: none;
-     cursor: pointer;
-
- }
 
