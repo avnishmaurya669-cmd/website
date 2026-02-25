@@ -1,12 +1,23 @@
 <!DOCTYPE html>
 <html>
 
+<html lang="en">
+
 <head>
     <title>Register</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         body {
-            font-family: Arial;
+            font-family: Arial, sans-serif;
             background: #5e93be;
+            margin: 0;
+            padding: 0;
         }
 
         h2 {
@@ -16,25 +27,60 @@
 
         form {
             width: 100%;
-            max-width:450px;
+            max-width: 778px;
             margin: 100px auto;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
             background: #c5944b;
             padding: 20px;
             box-shadow: 0 0 10px gray;
+
+
+
         }
 
         input {
-            width: 90%;
+            width: 100%;
             padding: 10px;
             margin: 10px 0;
+            border-radius: 5px;
+
         }
 
         button {
+
+
             width: 100%;
-            padding: 10px;
-            background: green;
+            padding: 12px;
+            margin-top: 10px;
+            background: #2d5f8a;
             color: white;
             border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        p {
+            text-align: center;
+            font-size: 14px;
+        }
+
+        a {
+            color: #2d5f8a;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+
+        /* Extra small screen fix */
+        @media(max-width:350px) {
+            form {
+                padding: 15px;
+            }
         }
     </style>
 </head>
@@ -52,12 +98,12 @@
         <input type="tel" id="mobile" name="mobile" maxlength="10" placeholder="Enter the valid phone number"
             pattern="[0-9]{10}" required><br><br>
 
-        <label>Gender:</label><br>
-        <input type="radio" id="male" name="gender" required>
-        <label for="male">Male</label>
+        <label>Gender:</label>
+        <label> <input type="radio" id="male" name="gender" required>Male:</label>
 
-        <input type="radio" id="female" name="gender" required>
-        <label for="female">Female</label><br><br>
+
+        <label> <input type="radio" id="female" name="gender" required>Female:</label><br><br>
+
 
         <label for="subject">Subject:</label><br>
         <select id="subject" name="subject" requred><br><br>
@@ -76,9 +122,11 @@
         <label>Select Data:</label><br>
         <input type="date" name="date" required><br><br>
 
-
+        <label>Email:</label><br>
         <input type="email" id="email" placeholder="Email" required>
+        <label>Password:</label><br>
         <input type="password" id="password" placeholder="Password" maxlength="8" pattern="[0-9,A-Z]{8}" required>
+        <button type="button" onclick="togglePassword()">Show / Hide Password</button>
         <button type="submit">Register</button>
         <p>Already registered? <a href="login.html">Login</a></p>
     </form>
@@ -105,4 +153,3 @@
 </body>
 
 </html>
-
